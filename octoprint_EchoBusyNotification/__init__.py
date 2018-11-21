@@ -54,6 +54,19 @@ class EchoBusyNotificationPlugin(
                 self._logger.info("response: %s" % response.text)
 
 
+        def get_update_information(self):
+            return dict(EchoBusyNotification=dict(
+                displayName="EchoBusyNotificationPlugin",
+                displayVersion=self._plugin_version,
+
+                type="github_release",
+                user="tjjfvi",
+                repo="OctoPrint-EchoBusyNotification",
+                current=self._plugin_version,
+
+                pip="https://github.com/tjjfvi/OctoPrint-EchoBusyNotification/archive/{target_version}.zip"
+            ))
+
 __plugin_name__ = "EchoBusyNotification"
 __plugin_implementation__ = EchoBusyNotificationPlugin()
 
