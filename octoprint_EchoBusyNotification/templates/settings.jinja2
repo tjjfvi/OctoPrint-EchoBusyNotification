@@ -1,0 +1,21 @@
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label">{{ _('IFTTT Maker Key') }}</label>
+        <div class="controls">
+            <input type="text" class="input-block-level" data-bind="value: settings.plugins.EchoBusyNotification.makerkey">
+        </div>
+    </div>
+	<div class="control-group">
+        <label class="control-label">{{ _('Notification Threshold') }}</label>
+        <div class="controls">
+            <input type="number" class="input-block-level" data-bind="value: settings.plugins.EchoBusyNotification.busy_threshold">
+        </div>
+    </div>
+	<div class="control-group">
+        <label class="control-label">{{ _('Trigger Name') }}</label>
+        <div class="controls">
+            <input type="text" class="input-block-level" data-bind="value: settings.plugins.EchoBusyNotification.trigger_name">
+        </div>
+    </div>
+</form>
+
